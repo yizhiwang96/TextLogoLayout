@@ -35,7 +35,7 @@ We manually annotate the bounding box, pixel-level mask, and category for each c
 	<img src="dataset/intro/textlogo3k_annos.jpg"> 
 </div>
 
-Download link: [Google Drive](https://drive.google.com/drive/folders/1FofGxAbpXp2Jjfz-mROsqwpOvL8SKpuE?usp=sharing), [PKU Disk](https://disk.pku.edu.cn:443/link/7201CADEA4E0A3B977D71228B5CCABE8)(Password: 1VEn)
+Download link: [Google Drive](https://drive.google.com/drive/folders/1FofGxAbpXp2Jjfz-mROsqwpOvL8SKpuE?usp=sharing), [PKU Disk](https://disk.pku.edu.cn:443/link/7201CADEA4E0A3B977D71228B5CCABE8) (Password: 1VEn)
 
 Please download it, unzip it, and put the folder 'TextLogo3K' under './dataset/'.
 
@@ -45,7 +45,7 @@ In addition to the layout synthesis problem addressed in our paper, our dataset 
 
 ### English Dataset
 The English dataset we used in from TextSeg(Rethinking Text Segmentation: A Novel Dataset and A Text-Specific Refinement Approach, CVPR 2021).
-Please follow the instructions in its [homepage](https://github.com/SHI-Labs/Rethinking-Text-Segmentation) to request the dataset.
+Please follow the instructions in its [homepage] (https://github.com/SHI-Labs/Rethinking-Text-Segmentation) to request the dataset.
 
 ## Training and Testing
 
