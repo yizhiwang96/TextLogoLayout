@@ -41,11 +41,11 @@ Please download it, unzip it, and put the folder 'TextLogo3K' under './dataset/'
 
 **Please note that this dataset CAN ONLY be used for academic purpose.**
 
-In addition to the layout synthesis problem addressed in our paper, our dataset can also be adopted in many tasks, such as (1) text detection/segmentation, (2) texture transfer, (3) artistic text recognition, and (4) artistic font generation.
+In addition to the layout synthesis problem addressed in our paper, our dataset can also be adopted in many tasks, such as (1) **text detection/segmentation**, (2) **texture transfer**, (3) **artistic text recognition**, and (4) **artistic font generation**.
 
 ### English Dataset
-The English dataset we used in from TextSeg(Rethinking Text Segmentation: A Novel Dataset and A Text-Specific Refinement Approach, CVPR 2021).
-Please follow the instructions in its [homepage] (https://github.com/SHI-Labs/Rethinking-Text-Segmentation) to request the dataset.
+The English dataset we used is from TextSeg (Rethinking Text Segmentation: A Novel Dataset and A Text-Specific Refinement Approach, CVPR 2021).
+Please follow the instructions in its [homepage](https://github.com/SHI-Labs/Rethinking-Text-Segmentation) to request the dataset.
 
 ## Training and Testing
 
