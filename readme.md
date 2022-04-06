@@ -1,6 +1,6 @@
 # TextLogoLayout
 
-This is the official Pytorch impclementation of the paper:
+This is the official Pytorch implementation of the paper:
 
 Aesthetic Text Logo Synthesis via Content-aware Layout Inferring. CVPR 2022.
 
