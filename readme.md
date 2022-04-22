@@ -47,9 +47,66 @@ In addition to the layout synthesis problem addressed in our paper, our dataset 
 The English dataset we used is from TextSeg (Rethinking Text Segmentation: A Novel Dataset and A Text-Specific Refinement Approach, CVPR 2021).
 Please follow the instructions in its [homepage](https://github.com/SHI-Labs/Rethinking-Text-Segmentation) to request the dataset.
 
+## Installation
+
+### Requirement
+
+- **python 3.8**
+- **Pytorch 1.9.0** (it may work on some lower or higher versions, but not tested)
+
+Please use [Anaconda](https://docs.anaconda.com/anaconda/install/linux/) to build the environment:
+```shell
+conda create -n tll python=3.8
+source activate tll
+```
+Install pytorch via the [instructions](https://pytorch.org/get-started/locally/).
+- Others
+```shell
+conda install tensorboardX scikit-image jieba
+```
+
 ## Training and Testing
 
-Our code will be released very soon.
+### Training 
+To train our model:
+```shell
+python train.py --experiment_name base_model 
+```
+The training log will be written in `./experiments/base_model/logs`, which can be visualized by Tensorboard.
+The checkpoints will be saved in `./experiments/base_model/checkpoints`.
+All hyper-parameters can be found in `options.py`.
+
+Our code supports multi-gpu training, if your single GPU's memory is not enough, check `multi_gpu` in `options.py` is `True` and run:
+```shell
+CUDA_VISIBLE_DEVICES=0,1,2...,n python train.py --experiment_name base_model 
+```
+### Testing 
+To test our model on TextLogo3K testing dataset:
+```shell
+python test.py --experiment_name base_model --test_sample_times 10 --test_epoch 600
+```
+The results will be saved in `./experiments/base_model/results`.
+
+### Testing on your own data
+(This function is being developed, will be upgraded soon)
+To test our model on your own cases:
+First, download the Chinese embeddings from [Chinese-Word-Vectors](https://github.com/Embedding/Chinese-Word-Vectors), i.e., sgns.baidubaike.bigram-char, put it under './dataset/Embeddings'.
+
+Then, generate the data from input texts and font files:
+```shell
+python gen_data.py --input_text 你好世界 --ttf_path ./dataset/ttfs/FZShengSKSJW.TTF --output_dir ./dataset/YourDataSet/
+```
+Last, use our model to infer:
+```shell
+python test.py --experiment_name base_model --test_sample_times 10 --test_epoch 500 --data_name YourDataSet --mode test
+```
+The results will be written to `./experiments/base_model/results/500/YourDataSet/`
+
+## Acknowledgment
+
+- [Chinese-Word-Vectors](https://github.com/Embedding/Chinese-Word-Vectors)
+- [pytorch-fid](https://github.com/mseitzer/pytorch-fid)
+- [TextSeg](https://github.com/SHI-Labs/Rethinking-Text-Segmentation)
 
 ## Citation
 
