@@ -5,7 +5,7 @@ This is the official Pytorch implementation of the paper:
 Aesthetic Text Logo Synthesis via Content-aware Layout Inferring. CVPR 2022.
 
 Paper: [arxiv](https://arxiv.org/abs/2204.02701)
-Supplementary: Link (will be uploaded soon)
+Supplementary: [link](./dataset/intro/CVPR_22_textlogolayout_SM.pdf)
 
 ## Demo
 Our model takes glyph images and their corresponding texts as input and synthesizes aesthetic layouts for them automatically.
