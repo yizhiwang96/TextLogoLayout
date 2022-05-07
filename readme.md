@@ -80,6 +80,9 @@ Our code supports multi-gpu training, if your single GPU's memory is not enough,
 ```shell
 CUDA_VISIBLE_DEVICES=0,1,2...,n python train.py --experiment_name base_model 
 ```
+### Pretrained models
+Our trained checkpoints (at epoch 600) can be found in [Google Drive](https://drive.google.com/drive/folders/1wpfvpv37ja2e5zpUvfU_YT1AQHhaUZN5?usp=sharing) and [PKU Disk](https://disk.pku.edu.cn:443/link/B793615E0997A4B82CC3B74E22C3CAB5). We find checkpoints at different steps may give different styles, it is encouranged to train the model by yourself and test more checkpoints.
+
 ### Testing 
 To test our model on TextLogo3K testing dataset:
 ```shell
