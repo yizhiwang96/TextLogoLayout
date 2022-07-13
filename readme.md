@@ -48,7 +48,7 @@ The English dataset we used is from TextSeg (Rethinking Text Segmentation: A Nov
 Please follow the instructions in its [homepage](https://github.com/SHI-Labs/Rethinking-Text-Segmentation) to request the dataset.
 
 We will update the preprocessing script for English Dataset soon, some details about the implementation:
-(1) In the English dataset, we view a word as an element, which is resized into 64*128 (height*width).
+(1) In the English dataset, we view a word as an element, which is resized into 64x128 (heightxwidth).
 (2) We utilize the word embeddings from [GloVe](https://github.com/stanfordnlp/GloVe).
 (3) The hyper-parameter `loss_ol_w` in `options.py` is set according to the experimental results. Some results demonstrated in our paper are from the setting of `loss_ol_w` = `5`.
 
